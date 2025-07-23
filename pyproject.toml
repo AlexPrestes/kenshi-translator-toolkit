@@ -1,0 +1,22 @@
+[project]
+name = "kenshi-translator-toolkit"
+version = "0.1.0b1"
+description = "Ferramenta para extração e reinserção de textos em arquivos .mod do Kenshi (Beta)"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/AlexPrestes/kenshi-translator-toolkit"
+Repository = "https://github.com/AlexPrestes/kenshi-translator-toolkit"
+Documentation = "https://github.com/AlexPrestes/kenshi-translator-toolkit/blob/main/README.md"
+"Bug Tracker" = "https://github.com/AlexPrestes/kenshi-translator-toolkit/issues"
