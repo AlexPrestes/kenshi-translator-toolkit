@@ -1,6 +1,6 @@
 [project]
 name = "kenshi-translator-toolkit"
-version = "0.1.0b2"
+version = "0.2.0"
 description = "Ferramenta para extração e reinserção de textos em arquivos .mod do Kenshi (Beta)"
 readme = "README.md"
 requires-python = ">=3.8"

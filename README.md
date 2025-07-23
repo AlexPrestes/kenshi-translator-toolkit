@@ -18,24 +18,35 @@ pip install kenshi-translator-toolkit
 
 ## Uso básico
 ```python
-from kenshi_translator_toolkit import decode_mod, encode_mod
-from kenshi_translator_toolkit.domain.entities import Data, Record, Dialog
+from kenshi_translator_toolkit import Decoder, Encoder
 
-# Extrair dados para tradução
-data = decode_mod("original.mod")
+# Inicializa os componentes
+decoder = Decoder()
+encoder = Encoder()
 
-# Modificar campos de tradução (exemplo)
+# Lê o arquivo original (binário) e decodifica os dados
+with open("/path/to/original.mod", "rb") as f:
+    content = f.read()
+    data = decoder.decode_mod(content)
+
+# Modifica os campos de tradução (exemplo)
 for record in data.data:
-    if record.typecode == 19:  # Diálogos
-        for dialog in record.text:
-            dialog.trans_text = dialog.text.upper()  # Exemplo simplificado
 
-    # Outros campos traduzíveis
-    record.trans_name = record.name.upper()
-    record.trans_desc = record.description.upper()
+    if record.name:
+        record.trans_name = record.name
 
-# Gerar novo arquivo traduzido
-encode_mod(data, "traduzido.mod")
+    if record.description:
+        record.trans_desc = record.description
+
+    for dialog in record.text:
+        dialog.trans_text = dialog.text
+
+# Codifica os dados novamente para um buffer binário
+buffer = encoder.encode_mod(data)
+
+# Salva o resultado em um novo arquivo
+with open("/path/to/translated.mod", "wb") as f:
+    f.write(buffer)
 ```
 =======
 # kenshi-translator-toolkit

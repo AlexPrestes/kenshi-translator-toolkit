@@ -1,10 +1,13 @@
 import io
 import logging
 
-from domain.entities.data import Data
-from domain.entities.record import Record
-from domain.entities.typecode import TypeCode
-from infrastructure.encoder.encoder_utils import write_int, write_string
+from kenshi_translator_toolkit.domain.entities.data import Data
+from kenshi_translator_toolkit.domain.entities.record import Record
+from kenshi_translator_toolkit.domain.entities.typecode import TypeCode
+from kenshi_translator_toolkit.infrastructure.encoder.encoder_utils import (
+    write_int,
+    write_string,
+)
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'

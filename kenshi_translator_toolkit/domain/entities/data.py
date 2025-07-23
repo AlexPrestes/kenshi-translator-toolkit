@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from domain.entities.record import Record
+from kenshi_translator_toolkit.domain.entities.record import Record
 
 
 @dataclass

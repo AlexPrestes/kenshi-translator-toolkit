@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 
-from domain.entities.dialog import Dialog
+from kenshi_translator_toolkit.domain.entities.dialog import Dialog
 
 
 @dataclass

@@ -4,11 +4,11 @@ import os
 import re
 import traceback
 
-from domain.entities.data import Data
-from domain.entities.dialog import Dialog
-from domain.entities.record import Record
-from domain.entities.typecode import TypeCode
-from infrastructure.decoder.decoder_utils import (
+from kenshi_translator_toolkit.domain.entities.data import Data
+from kenshi_translator_toolkit.domain.entities.dialog import Dialog
+from kenshi_translator_toolkit.domain.entities.record import Record
+from kenshi_translator_toolkit.domain.entities.typecode import TypeCode
+from kenshi_translator_toolkit.infrastructure.decoder.decoder_utils import (
     read_bool,
     read_char,
     read_float,
