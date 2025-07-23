@@ -33,13 +33,13 @@ with open("/path/to/original.mod", "rb") as f:
 for record in data.data:
 
     if record.name:
-        record.trans_name = record.name
+        record.trans_name = 'record.name'
 
     if record.description:
-        record.trans_desc = record.description
+        record.trans_desc = 'record.description'
 
     for dialog in record.text:
-        dialog.trans_text = dialog.text
+        dialog.trans_text = 'dialog.text'
 
 # Codifica os dados novamente para um buffer binário
 buffer = encoder.encode_mod(data)
