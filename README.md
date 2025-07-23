@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Kenshi Translator Toolkit (Beta)
 
 [![PyPI version](https://img.shields.io/pypi/v/kenshi-translator-toolkit.svg)](https://pypi.org/project/kenshi-translator-toolkit/)
