@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kenshi Translator Toolkit (Beta)
 
 [![PyPI version](https://img.shields.io/pypi/v/kenshi-translator-toolkit.svg)](https://pypi.org/project/kenshi-translator-toolkit/)
@@ -37,3 +38,7 @@ for record in data.data:
 # Gerar novo arquivo traduzido
 encode_mod(data, "traduzido.mod")
 ```
+=======
+# kenshi-translator-toolkit
+Ferramenta para extração e reinserção de textos em arquivos .mod do Kenshi
+>>>>>>> origin/main
