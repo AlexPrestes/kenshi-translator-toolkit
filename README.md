@@ -27,7 +27,7 @@ encoder = Encoder()
 # Lê o arquivo original (binário) e decodifica os dados
 with open("/path/to/original.mod", "rb") as f:
     content = f.read()
-    data = decoder.decode_mod(content)
+    data = decoder.decoder_mod(content)
 
 # Modifica os campos de tradução (exemplo)
 for record in data.data:
@@ -42,7 +42,7 @@ for record in data.data:
         dialog.trans_text = 'dialog.text'
 
 # Codifica os dados novamente para um buffer binário
-buffer = encoder.encode_mod(data)
+buffer = encoder.encoder_mod(data)
 
 # Salva o resultado em um novo arquivo
 with open("/path/to/translated.mod", "wb") as f:
