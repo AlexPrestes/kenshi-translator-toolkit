@@ -1,5 +1,7 @@
 # Kenshi Translator Toolkit (Beta)
 
+Esse código foi refatorado com base no algoritmo apresentado no mod [google colab MOD Translation Helper](https://www.nexusmods.com/kenshi/mods/1667) do usuário [kongyo11](https://next.nexusmods.com/profile/kongyo11)
+
 [![PyPI version](https://img.shields.io/pypi/v/kenshi-translator-toolkit.svg)](https://pypi.org/project/kenshi-translator-toolkit/)
 [![GitHub license](https://img.shields.io/github/license/AlexPrestes/kenshi-translator-toolkit)](https://github.com/AlexPrestes/kenshi-translator-toolkit/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/AlexPrestes/kenshi-translator-toolkit)](https://github.com/AlexPrestes/kenshi-translator-toolkit/issues)
